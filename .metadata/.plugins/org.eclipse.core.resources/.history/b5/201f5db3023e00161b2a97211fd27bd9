@@ -1,0 +1,29 @@
+package com.example;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
+import org.springframework.jdbc.core.namedparam.SqlParameterSource;
+
+@SpringBootApplication
+public class JpaApplication implements CommandLineRunner{
+
+	@Autowired
+	CustomerRepository customerRepository;
+	
+	@Override
+	public void run(String... arg0) throws Exception {
+		// TODO Auto-generated method stub
+		
+		Customer created = customerRepository.save(new Customer(null, "hideyosi", "deki"));
+		System.out.println(created + " is created");
+		
+		customerRepository.findAll().forEach(System.out::println);
+	}
+	
+	public static void main(String[] args) {
+		SpringApplication.run(JpaApplication.class, args);
+	}
+}

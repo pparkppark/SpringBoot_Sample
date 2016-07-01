@@ -1,0 +1,10 @@
+package com.example.repository;
+
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
+
+import com.example.domain.Customer;
+
+public class CustomerRepository {
+	private final ConcurrentMap<Integer, Customer> customerMap = new ConcurrentHashMap<>();
+}

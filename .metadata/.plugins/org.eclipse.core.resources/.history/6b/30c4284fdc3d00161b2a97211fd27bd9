@@ -1,0 +1,20 @@
+package com.example;
+
+import java.util.Scanner;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.Import;
+
+@SpringBootApplication
+public class DiApplication {
+
+	public static void main(String[] args) {
+		try (ConfigurableApplicationContext context = SpringApplication.run(DiApplication.class, args)) {
+			FrontEnd frontEnd = context.getBean(FrontEnd.class);
+			frontEnd.run();
+		}
+		
+	}
+}

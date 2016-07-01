@@ -1,0 +1,13 @@
+package com.example;
+
+import java.io.InputStream;
+
+public class ScannerArgumentResolver implements ArgumentResolver {
+
+	@Override
+	public Argument resolve(InputStream stream) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

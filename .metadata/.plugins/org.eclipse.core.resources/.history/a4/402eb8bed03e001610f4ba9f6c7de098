@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>고객 정보 편집</title>
+<link rel="Stylesheet" type="type/css" href="../../static/css/style.css" th:href="@{/css/style.css}"/>
+</head>
+<body>
+
+</body>
+</html>

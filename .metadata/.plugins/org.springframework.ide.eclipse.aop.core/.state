@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="demo"/>
+<aop-project name="di"/>
+<aop-project name="rest"/>
+<aop-project name="layering"/>
+<aop-project name="jpa"/>
+<aop-project name="jdbc"/>
+<aop-project name="thymeleaf"/>
+</aop-reference-model>
